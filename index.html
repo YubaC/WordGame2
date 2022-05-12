@@ -8,7 +8,7 @@
     <title>对不起，《文字游戏》暂时停止服务。</title>
     <style>
         h1,
-        iframe,
+        audio,
         img {
             margin: 30px;
             text-align: center
@@ -21,9 +21,12 @@
     <h1>
         <div id="showtime"></div>
     </h1>
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="https://music.163.com/outchain/player?type=2&id=1883803592&auto=1&height=32"></iframe>
-    <br>
-    <img src="images/wordgame.jpg">
+    <audio controls> 
+        <source src="https://cdn.jsdelivr.net/gh/YubaC/tester@latest/theme.mp3">
+    </audio> <br>
+
+    <img width="80%" align="center" src="https://cdn.jsdelivr.net/gh/YubaC/tester@latest/images/wordgame.jpg">
+
     <script>
         var showtime = function() {
             var nowtime = new Date(), //获取当前时间
